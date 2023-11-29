@@ -96,6 +96,4 @@ Tasks can be sorted based on priority in ascending or descending order. Paginati
 
 <!-- Add your screenshots here -->
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
