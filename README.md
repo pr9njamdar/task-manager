@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Task Management App 📋✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based Task Management Application with features like task listing, adding, editing, and deleting tasks, along with marking tasks as completed.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 📝 **Task List Component:** Display a list of tasks with task names and completion status.
+- ✔️ **Task Completion:** Mark tasks as completed with a checkbox.
+- 🗑️ **Delete Tasks:** Remove tasks from the list.
+- 📅 **Task Details:** View additional details like description and due date.
+- 🆕 **Add Task Form:** Modal/form for adding new tasks with name, description, and priority level.
+- ✏️ **Edit Task Form:** Modal/form for editing task details.
+- 🔄 **Routing:** Implemented using React Router for navigation between task list, add task, and edit task pages.
+- 🔄 **State Management:** Utilized React state for managing component-specific functionalities.
+- 💾 **LocalStorage:** Tasks are saved in the browser's Local Storage for persistence.
+- 🎨 **Styling:** Responsive design with CSS, emphasizing a visually appealing and user-friendly interface.
+- ✨ **Animation:** Animated transitions between routes using Framer Motion.
+- 📊 **Progress Bar:** Visualize the completion progress with a dynamic progress bar.
+- 📊 **Sorting:** Sort tasks based on priority in ascending or descending order.
+- 📊 **Pagination:** Display tasks in pages for better navigation.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **`public/`:** Contains the `index.html` file, the entry point for the React application.
+  
+- **`src/`:** Holds the main source code of the application.
+  - **`components/`:** Organized components that encapsulate specific functionality.
+    - `AddTaskForm.js`: Form component for adding new tasks.
+    - `EditTaskForm.js`: Form component for editing task details.
+    - `TaskItem.js`: Component for rendering individual tasks.
+    - `TaskList.js`: Component responsible for rendering the task list.
+  - **`styles/`:** Stylesheets for each component.
+    - `TaskItem.css`: Styles for the TaskItem component.
+    - `TaskList.css`: Styles for the TaskList component.
+    - `ProgressBar.css`: Styles for the Progress Bar component.
+  - **`App.js`:** The main component that orchestrates the overall structure of the application.
+  - **`index.js`:** The entry point where React is initialized and the main component is rendered.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`README.md`:** Provides comprehensive information about the project, its features, and how to run it.
 
-### `npm test`
+- **`package.json`:** Contains metadata about the project and lists its dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design Choices
 
-### `npm run build`
+### React Component Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application is built with a focus on component reusability and separation of concerns. Each major piece of functionality is encapsulated in its own component, making it easier to maintain and extend the codebase.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS is used for styling components, following a modular approach. Each component has its own stylesheet, promoting a clean and organized styling structure. The use of a responsive design ensures a seamless user experience across different devices.
 
-### `npm run eject`
+### State Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React state is employed within each component to manage their respective functionalities. Context or state lifting is used judiciously to share state between components when necessary.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Local Storage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tasks are saved in the browser's local storage, ensuring persistence even after a page refresh. This choice simplifies the need for backend storage and provides a seamless user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Animation
 
-## Learn More
+Framer Motion, a motion library for React, is used to add animated transitions between routes, providing a visually appealing and smooth user interface.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Progress Bar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A dynamic progress bar is introduced to visualize the completion status of tasks. Framer Motion is utilized to add animations, creating a more engaging user experience.
 
-### Code Splitting
+### Sorting and Pagination
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Tasks can be sorted based on priority in ascending or descending order. Pagination is implemented to display tasks in pages, improving navigation for users with large task lists.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Libraries Used
 
-### Advanced Configuration
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [React Router](https://reactrouter.com/): Declarative routing for React.js.
+- [Framer Motion](https://www.framer.com/motion/): A production-ready motion library for React.
+- [Jest](https://jestjs.io/): A delightful JavaScript testing framework.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## How to Run
 
-### Deployment
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd task-management-app`
+3. Install dependencies: `npm install`
+4. Run the app: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Screenshots
+![Screenshot 2023-11-30 010742](https://github.com/pr9njamdar/task-manager/assets/79560640/f463635b-6275-47cd-b82b-14faee1a09a9)
+![Screenshot 2023-11-30 010715](https://github.com/pr9njamdar/task-manager/assets/79560640/8d66afc6-6847-4f4c-9ae8-a0c328a1c8ea)
+![Screenshot 2023-11-30 010549](https://github.com/pr9njamdar/task-manager/assets/79560640/aa707af0-cedd-4c9f-b327-2e4b01a4cf4d)
+![Screenshot 2023-11-30 010346](https://github.com/pr9njamdar/task-manager/assets/79560640/e08049ac-52dc-4a87-97f9-00e2c0e4b321)
+![Screenshot 2023-11-30 010056](https://github.com/pr9njamdar/task-manager/assets/79560640/52dbc3a8-7ef2-42bb-ba30-2b14d30d82a9)
 
-### `npm run build` fails to minify
+<!-- Add your screenshots here -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
