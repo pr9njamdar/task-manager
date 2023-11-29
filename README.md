@@ -1,7 +1,8 @@
 # Task Management App 📋✨
 
 A simple React-based Task Management Application with features like task listing, adding, editing, and deleting tasks, along with marking tasks as completed.
-
+## Demo
+you can view this app's demo [here](https://manage-my-task.netlify.app/)
 ## Features
 
 - 📝 **Task List Component:** Display a list of tasks with task names and completion status.
