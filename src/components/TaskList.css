@@ -1,0 +1,165 @@
+/* TaskList.css */
+.container{
+  margin-top: 30px;
+  border: #1e90ff 2px solid;
+  background-color: #232323;
+  border-radius: 25px;
+  width: 500px;
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+  
+  .heading {
+    text-align: center;
+    background: -webkit-linear-gradient(#8a2be2, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    overflow-x: visible;
+  }
+  
+ 
+
+  .form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form label {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #8a2be2, #1e90ff);
+    border-image-slice: 1;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #8a2be2, #1e90ff);
+    border-image-slice: 1;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #8a2be2, #1e90ff);
+    border-image-slice: 1;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .fn-btn{
+    background: #8a2be2 !important;
+    margin: 10px;
+  }
+  .btn ,.form button  {
+    background: linear-gradient(to right, #8a2be2, #1e90ff);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  ul{
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  
+  height: 450px;
+  
+
+
+  }
+
+  .blue{
+    background-color: #1e90ff !important;
+  }
+  ul::-webkit-scrollbar{
+    display: none;
+  }
+
+  .form button:hover {
+    background: linear-gradient(to right, #1e90ff, #8a2be2);
+  }
+  
+  /* Add this to your CSS file or add a new CSS file for pagination styles */
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination button {
+  width: 15px;
+  height: 15px; 
+  border: 1px solid #ddd;
+  margin: 2px;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.pagination button.active {
+  background-color: #8a2be2 !important;
+}
+
+
+/* ProgressBar.css */
+/* ProgressBar.css */
+
+.progress-bar-container {
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-bar {
+  padding: 5px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-color:  #1e90ff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
