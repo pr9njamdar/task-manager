@@ -81,7 +81,7 @@ Tasks can be sorted based on priority in ascending or descending order. Paginati
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
 - [React Router](https://reactrouter.com/): Declarative routing for React.js.
 - [Framer Motion](https://www.framer.com/motion/): A production-ready motion library for React.
-- [Jest](https://jestjs.io/): A delightful JavaScript testing framework.
+
 
 ## How to Run
 
