@@ -4,7 +4,7 @@ Answer to Question 1 of assignment [Assignment.pdf](https://github.com/pr9njamda
 # Task Management App 📋✨
 
 A simple React-based Task Management Application with features like task listing, adding, editing, and deleting tasks, along with marking tasks as completed.
-## Demo
+## [Demo](https://manage-my-task.netlify.app/)
 you can view this app's demo [here](https://manage-my-task.netlify.app/)
 ## Features
 
